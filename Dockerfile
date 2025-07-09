@@ -5,7 +5,6 @@ LABEL maintainer="iJUG e.V."
 ARG KC_DB=postgres
 ARG KC_HEALTH_ENABLED=true
 ARG KC_FEATURES=passkeys
-ARG KC_FEATURES_DISABLED=authorization,ciba,kerberos
 
 # Copy build relevant resources
 COPY ./target/keycloak-extensions.jar /opt/keycloak/providers/keycloak-extensions.jar
